@@ -1,0 +1,42 @@
+{
+  "name": "lijinbu",
+  "private": true,
+  "version": "0.3.2",
+  "type": "module",
+  "scripts": {
+    "dev": "node node_modules/vite/bin/vite.js",
+    "build": "node node_modules/vite/bin/vite.js build",
+    "preview": "node node_modules/vite/bin/vite.js preview",
+    "tauri": "node node_modules/@tauri-apps/cli/tauri.js",
+    "test:money": "node scripts/test-money.mjs",
+    "test:gift": "node scripts/test-gift-suggest.mjs",
+    "test:rmb": "node scripts/test-rmb.mjs",
+    "test:batch": "node scripts/test-batch.mjs",
+    "test:s5": "node scripts/test-rmb.mjs && node scripts/test-batch.mjs && node scripts/test-money.mjs",
+    "test:s7": "node scripts/test-rmb.mjs && node scripts/test-batch.mjs && node scripts/test-money.mjs && node scripts/test-gift-suggest.mjs && node scripts/test-csv.mjs && node scripts/test-quick.mjs",
+    "test:csv": "node scripts/test-csv.mjs",
+    "test:quick": "node scripts/test-quick.mjs"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.5.0",
+    "@tauri-apps/plugin-notification": "^2.8.0",
+    "pinyin-pro": "^3.29.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.5.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/three": "^0.170.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  },
+  "optionalDependencies": {
+    "three": "^0.170.0"
+  }
+}

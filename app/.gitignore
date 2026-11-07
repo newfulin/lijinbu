@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Frontend build
+dist/
+
+# Tauri / Rust
+src-tauri/target/
+src-tauri/WixTools/
+
+# Env / OS / logs
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+
+# Optional local tooling
+.cargo/
+.rustup/

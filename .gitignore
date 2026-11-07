@@ -1,0 +1,32 @@
+# Dependencies & build
+**/node_modules/
+**/dist/
+**/src-tauri/target/
+*.log
+
+# Env / OS
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Local / huge / scratch
+tmp-ui-review/
+release/
+*.dmg
+*.app/
+*.exe
+*.zip
+!docs/**
+
+# Accidental root lock (real lock is app/package-lock.json)
+/package-lock.json
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# 覆盖本机全局 *.png/*.jpg（图标与文档配图必须入库）
+!app/src-tauri/icons/*.png
+!assets/**
